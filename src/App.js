@@ -108,7 +108,7 @@ function App() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
             <div className="bg-red-600 p-2 rounded-lg shadow-lg animate-pulse">🚨</div>
-            <h1 className="text-xl font-black tracking-tighter uppercase italic">LaporDaruratAI</h1>
+            <h1 className="text-xl font-black tracking-tighter">LaporDarurat</h1>
           </div>
           <div className="flex bg-white/5 p-1 rounded-xl border border-white/10 w-full sm:w-auto">
             {["analisis", "riwayat"].map(t => (
