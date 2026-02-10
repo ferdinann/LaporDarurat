@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# 🚨 LaporDarurat: AI-Powered Emergency Reporting System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Ferdinann/BantuDarurat_Lapor)
+[![Python](https://img.shields.io/badge/Python-3.9+-yellow)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://tensorflow.org/)
 
-## Available Scripts
+**LaporDarurat** adalah sistem informasi darurat berbasis *Computer Vision* dan *Deep Learning* yang dirancang untuk mendeteksi serta mengklasifikasikan insiden darurat secara otomatis melalui analisis gambar secara *real-time*.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Problem Statement
+Indonesia memiliki risiko tinggi terhadap berbagai insiden darurat (kebakaran, banjir, kecelakaan), namun sistem pelaporan manual seringkali subjektif dan lambat. Keterlambatan verifikasi data di tengah kondisi panik berisiko memperparah kerusakan dan meningkatkan potensi korban jiwa.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💡 Solusi
+LaporDarurat hadir untuk memvalidasi bukti visual secara instan. Dengan teknologi AI, sistem ini meminimalkan kesalahan pelaporan, memberikan skor kepercayaan (confidence score), dan mempercepat koordinasi dengan pihak berwenang melalui data yang akurat dan presisi.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Fitur Utama
+* **Deteksi Insiden Visual:** Identifikasi otomatis jenis darurat (Kebakaran, Banjir, Bangunan Runtuh, Kecelakaan) melalui foto/kamera.
+* **Confidence Score:** Menampilkan tingkat akurasi prediksi model.
+* **Integrasi Lokasi:** Penggabungan analisis visual dengan input lokasi kejadian.
+* **Rekomendasi Tindakan:** Instruksi singkat berdasarkan jenis insiden yang terdeteksi.
+* **Riwayat Laporan:** Dokumentasi kejadian yang telah dilaporkan untuk tindak lanjut.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Teknologi & Tools
+| Kategori | Teknologi yang Digunakan |
+|---|---|
+| **Core Model** | MobileNet (CNN Architecture) |
+| **Framework AI** | TensorFlow & Keras |
+| **Language** | Python |
+| **Interface** | Gradio |
+| **Deployment** | Hugging Face Spaces |
+| **Training** | Google Colab |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Cara Penggunaan
+1.  **Akses Aplikasi:** Buka [LaporDarurat di Hugging Face](https://huggingface.co/spaces/Ferdinann/BantuDarurat_Lapor).
+2.  **Input Visual:** Klik "Ambil Foto" atau unggah gambar dari galeri.
+3.  **Analisis AI:** Tunggu beberapa detik hingga model MobileNet selesai mengklasifikasikan gambar.
+4.  **Verifikasi & Lokasi:** Tinjau hasil prediksi dan masukkan alamat/detail lokasi kejadian.
+5.  **Kirim Laporan:** Tekan tombol **LAPORKAN INSIDEN** untuk mengirim data ke sistem.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📈 Pengembangan Masa Depan
+* **Integrasi IoT:** Menghubungkan model dengan CCTV kota untuk deteksi otomatis tanpa laporan manual.
+* **Auto-Location:** Deteksi lokasi otomatis menggunakan GPS perangkat.
+* **Multi-Language Support:** Dukungan bahasa daerah untuk instruksi darurat.
